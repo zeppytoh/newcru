@@ -2,8 +2,8 @@
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
 // We use these to define default font stacks
-$font-family-sans-serif: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
-$font-family-serif: Georgia, Cambria, "Times New Roman", Times, serif;
+$font-family-sans-serif: "Chivo", Helvetica, Roboto, Arial, sans-serif;
+$font-family-serif: "Montserrat", Georgia, Cambria, "Times New Roman", Times, serif;
 $font-family-monospace: Consolas, "Liberation Mono", Courier, monospace;
 
 $font-weight-normal: normal !default;
@@ -45,3 +45,96 @@ $cru-bg      : #e7e7e8;
  $body-font-family: $font-family-sans-serif;
  $body-font-weight: $font-weight-normal;
  $body-font-style: normal;
+
+// b. Grid
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// $include-html-grid-classes: $include-html-classes;
+// $include-xl-html-grid-classes: false;
+
+ $row-width: rem-calc(1200);
+ $total-columns: 16;
+
+// $last-child-float: $opposite-direction;
+// 34. Top Bar
+// - - - - - - - - - - - - - - - - - - - - - - - - -
+
+ $include-html-top-bar-classes: $include-html-classes;
+
+// Background color for the top bar
+ $topbar-bg-color: $cru-bg;
+ $topbar-bg: $topbar-bg-color;
+
+// Height and margin
+ $topbar-height: rem-calc(100);
+ $topbar-margin-bottom: 0;
+
+// Controlling the styles for the title in the top bar
+// $topbar-title-weight: $font-weight-normal;
+// $topbar-title-font-size: rem-calc(17);
+
+// Set the link colors and styles for top-level nav
+ $topbar-link-color: $secondary-color;
+ $topbar-link-color-hover: scale-color($jet, $lightness: -14%);
+ $topbar-link-color-active: $white;
+ $topbar-link-color-active-hover: $white;
+ $topbar-link-weight: $font-weight-normal;
+ $topbar-link-font-size: rem-calc(13);
+ $topbar-link-hover-lightness: -10%; // Darken by 10%
+ $topbar-link-bg: $topbar-bg;
+ $topbar-link-bg-hover: $cru-bg;
+ $topbar-link-bg-color-hover: $cru-bg;
+ $topbar-link-bg-active: $cru-bg;
+ $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
+ $topbar-link-font-family: $body-font-family;
+ $topbar-link-text-transform: uppercase;
+ $topbar-link-padding: ($topbar-height / 3);
+ $topbar-back-link-size: rem-calc(18);
+ $topbar-link-dropdown-padding: rem-calc(20);
+ $topbar-button-font-size: 0.75rem;
+ $topbar-button-top: 7px;
+
+// Style the top bar dropdown elements
+// $topbar-dropdown-bg: $oil;
+// $topbar-dropdown-link-color: $white;
+// $topbar-dropdown-link-color-hover: $topbar-link-color-hover;
+// $topbar-dropdown-link-bg: $oil;
+// $topbar-dropdown-link-bg-hover: $oil;
+// $topbar-dropdown-link-weight: $font-weight-normal;
+// $topbar-dropdown-toggle-size: 5px;
+// $topbar-dropdown-toggle-color: $white;
+// $topbar-dropdown-toggle-alpha: 0.4;
+
+// $topbar-dropdown-label-color: $monsoon;
+// $topbar-dropdown-label-text-transform: uppercase;
+// $topbar-dropdown-label-font-weight: $font-weight-bold;
+// $topbar-dropdown-label-font-size: rem-calc(10);
+// $topbar-dropdown-label-bg: $oil;
+
+// Top menu icon styles
+// $topbar-menu-link-transform: uppercase;
+// $topbar-menu-link-font-size: rem-calc(13);
+// $topbar-menu-link-weight: $font-weight-bold;
+// $topbar-menu-link-color: $white;
+// $topbar-menu-icon-color: $white;
+// $topbar-menu-link-color-toggled: $jumbo;
+// $topbar-menu-icon-color-toggled: $jumbo;
+// $topbar-menu-icon-position: $opposite-direction; // Change to $default-float for a left menu icon
+
+// Transitions and breakpoint styles
+// $topbar-transition-speed: 300ms;
+// Using rem-calc for the below breakpoint causes issues with top bar
+// $topbar-breakpoint: #{lower-bound($medium-range)}; // Change to 9999px for always mobile layout
+// $topbar-media-query: $medium-up;
+
+// Top-bar input styles
+// $topbar-input-height: rem-calc(28);
+
+// Divider Styles
+// $topbar-divider-border-bottom: solid 1px scale-color($topbar-bg-color, $lightness: 13%);
+// $topbar-divider-border-top: solid 1px scale-color($topbar-bg-color, $lightness: -50%);
+
+// Sticky Class
+// $topbar-sticky-class: ".sticky";
+// $topbar-arrows: true; //Set false to remove the triangle icon from the menu item
+// $topbar-dropdown-arrows: true; //Set false to remove the \00bb >> text from dropdown subnavigation li//

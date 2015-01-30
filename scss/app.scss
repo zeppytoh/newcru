@@ -39,3 +39,65 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+.top-bar .name a img {
+  width: auto;
+  height: rem-calc(80);
+}
+
+.top-bar-section ul {
+  li.active:not(.has-form) a:not(.button) {
+    color: black;
+    &:hover {
+      color: $primary-color;
+      background-color: $cru-bg;
+    }
+  }
+  li.active:not(.has-form) a:not(.button)::after {
+      position: absolute;
+      bottom: ($topbar-height / 3);
+      left: ($topbar-height / 3);
+      width: 2em;
+      height: 0.3em;
+      background: $secondary-color;
+      content: '';
+      opacity: 0.3;
+      -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+      -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+      transition: opacity 0.3s, transform 0.3s;
+    	-webkit-transform: translateY(0.5em);
+	   -moz-transform: translateY(0.5em);
+	   transform: translateY(0.5em);
+  }
+  li>a {
+    position: relative;
+    letter-spacing: 20%;
+    font-size: rem-calc(16);
+
+    &::after {
+        position: absolute;
+        bottom: ($topbar-height / 3);
+        left: ($topbar-height / 3);
+        width: 2em;
+        height: 0.3em;
+        background: $primary-color;
+        content: '';
+        opacity: 0.5;
+        -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+        -moz-transition: opacity 0.3s, -moz-transform 0.3s;
+        transition: opacity 0.3s, transform 0.3s;
+        -webkit-transform: translateY(0.5em);
+         -moz-transform: translateY(0.5em);
+         transform: translateY(0.5em);
+    }
+
+    &:hover::after,
+    &:focus::after {
+      opacity: 1;
+        -webkit-transform: translateY(0.5em);
+         -moz-transform: translateY(0.5em);
+         transform: translateY(0.5em);
+    }
+  }
+
+}
+
